@@ -1,0 +1,73 @@
+ <html>
+
+
+<head>
+
+
+<link rel="stylesheet" href="ol.css"
+	type="text/css"></link>
+<style>
+#map {
+	width: 1200px;
+	height:800px;
+}
+
+#marker {
+	 width:125px;
+	height:9px; 
+	background: url("/static/src/image/wind-location.gif") no-repeat scroll
+		0% 0% transparent;
+	transform: rotate(270deg);
+	
+}
+.copyrights
+{
+   position: absolute;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 15px;
+    top: 855px;
+    left: 1080px;
+    z-index: 1;
+     
+    }
+    .Map_NextWatermark {
+    background-image: url(/static/src/image/next-footer-logo.png);
+    width: 4.5%;
+    height: 7%;
+    position: absolute;
+    top: 809px;
+    left: 1372px;
+    z-index: 1;
+        }
+</style>
+<script
+	src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+
+<script src="ajaxgoogleapi1.12.4.jquery.min.js"></script>
+ <script src="jquery.min.js"></script>
+<script src="ol.js" type="text/javascript"></script>
+
+<title>Map</title>
+</head>
+
+<body>
+
+	Select Attribute<select id="attr-list" onchange="addMarker(this)">
+		<option value="Select">Select</option>
+	</select>
+
+
+	<div id="map"><div class = "Map_NextWatermark" style="display:none;"></div>
+  <div class="copyrights" style="display:none;">
+					Powered by <a href="http://nexttechnosolutions.com/">NEXT Inc</a> .
+					All Rights Reserved.
+				</div></div>
+<! -- If data from JS -->
+	<script src="data.js" type="text/javascript"></script>
+	<script src="mapanimation.js"
+		type="text/javascript"></script>
+	<script></script>
+</body>
+</html> 
+
+
